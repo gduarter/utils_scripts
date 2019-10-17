@@ -1,3 +1,5 @@
+# utils_script
+
 This is a list of scripts used in the Rizzo Lab by Guilherme D.
 
 - submit_dock_tests.sh
