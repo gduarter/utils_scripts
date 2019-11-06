@@ -50,8 +50,8 @@ echo "Job done"
 }
 
 
-slurm_info_out()
-slurm_startjob()
+slurm_info_out
+slurm_startjob
 
 
 
