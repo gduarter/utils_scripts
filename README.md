@@ -26,7 +26,9 @@ This is a list of scripts used in the Rizzo Lab by Guilherme D. R. Matos
 - docking_job.sh
 
 
-
+- split_ZINC_mol2files.py
+    Splits large mol2 files created from ZINC tranches into manageable 
+    pieces. 
 
 
 
