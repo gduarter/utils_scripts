@@ -40,6 +40,10 @@ This is a list of scripts used in the Rizzo Lab by Guilherme D. R. Matos
     Splits large mol2 files created by DOCK from ZINC into manageable
     pieces.
 
+- pick_molecules.py
+
+    Picks molecules of interest from large multimolecule mol2 files based
+    on their ZINC IDs.
 
 
 
