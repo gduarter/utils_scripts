@@ -35,6 +35,12 @@ This is a list of scripts used in the Rizzo Lab by Guilherme D. R. Matos
     Splits large mol2 files created from ZINC tranches into manageable 
     pieces. 
 
+- split_DOCK_mol2files.py
+
+    Splits large mol2 files created by DOCK from ZINC into manageable
+    pieces.
+
+
 
 
 
