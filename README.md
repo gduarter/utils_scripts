@@ -45,6 +45,11 @@ This is a list of scripts used in the Rizzo Lab by Guilherme D. R. Matos
     Picks molecules of interest from large multimolecule mol2 files based
     on their ZINC IDs.
 
+- calculate_descriptor_statistics.py
+
+    Calculates statistics of all RDKit-related scripts obtained from
+    filter or descritor-driven de novo simulations.
+
 
 
 
