@@ -3,7 +3,7 @@
 #SBATCH --time=72:00:00
 #SBATCH --nodes=2
 #SBATCH --ntasks=8
-#SBATCH --job-name=refine_covid
+#SBATCH --job-name=equilibrate
 #SBATCH --output=%x-%j.o
 
 
@@ -39,17 +39,17 @@ date
 
 ### NVT Equilibration
 
-gmx grompp -f equil_nvt.mdp -c minimize.gro -p covid19_spike_system.top -o equil_nvt.tpr
+gmx grompp -f equil_nvt.mdp -c minimize.gro -p model.top -o equil_nvt.tpr
 mpirun -np 16 gmx_mpi mdrun -deffnm equil_nvt
 
 ### NPT Equilibration 1
 
-gmx grompp -f equil_npt.mdp -c equil_nvt.gro -p covid19_spike_system.top -o equil_npt.tpr
+gmx grompp -f equil_npt.mdp -c equil_nvt.gro -p model.top -o equil_npt.tpr
 mpirun -np 16 gmx_mpi mdrun -deffnm equil_npt
 
 ### NPT Equilibration 2
 
-gmx grompp -f equil_npt2.mdp -c equil_npt -p covid19_spike_system.top -o equil_npt2.tpr
+gmx grompp -f equil_npt2.mdp -c equil_npt -p model.top -o equil_npt2.tpr
 mpirun -np 16 gmx_mpi mdrun -deffnm equil_npt2
 
 
